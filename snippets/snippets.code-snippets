@@ -1,0 +1,375 @@
+{
+    "v3-vsetup": {
+        "prefix": "v3Setup",
+        "body": "<template>\r\n    <div></div>\r\n</template>\r\n\r\n<script setup>\r\n\r\nconst props = defineProps({});\r\n\r\nconst emits = defineEmits();\r\n</script>\r\n\r\n<style scoped lang=\"scss\"></style>\r\n",
+        "description": ""
+    },
+    "v3-options": {
+        "prefix": "v3Options",
+        "body": "<template>\r\n    <div>$1</div>\r\n</template>\r\n\r\n<script>\r\nimport { defineComponent } from 'vue';\r\n\r\nexport default defineComponent({\r\n    name: '$1',\r\n    data() {\r\n        return {};\r\n    },\r\n\r\n    props: {},\r\n\r\n    emits: {},\r\n\r\n    components: {},\r\n\r\n    created() {},\r\n\r\n    mounted() {},\r\n\r\n    methods: {},\r\n\r\n    computed: {},\r\n\r\n    watch: {},\r\n\r\n    filters: {},\r\n\r\n    directives: {}\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
+        "description": ""
+    },
+    "Created refObject": {
+        "prefix": "vref",
+        "body": [
+            "const $1 = ref($2);"
+        ],
+        "description": "Created refObject"
+    },
+    "Get Current Proxy": {
+        "prefix": "vproxy",
+        "body": [
+            "const { proxy } = getCurrentInstance();"
+        ],
+        "description": "Get Current Vue Proxy"
+    },
+    "Created Watch In Setup": {
+        "prefix": "vwatch",
+        "body": [
+            "watch($1, (newValue, oldValue) => {",
+            "\t$2",
+            "}, { deep: true });"
+        ],
+        "description": "Created Watch In Setup"
+    },
+    "Created Computed": {
+        "prefix": "vcomputed",
+        "body": [
+            "const $1 = computed(() => {",
+            "\t$2",
+            "});"
+        ],
+        "description": "Created Computed"
+    },
+    "Created onMounted": {
+        "prefix": "vonMounted",
+        "body": [
+            "onMounted(() => {",
+            "\t$1",
+            "});"
+        ],
+        "description": "Created onMounted"
+    },
+    "Created onUpdated": {
+        "prefix": "vonUpdated",
+        "body": [
+            "onUpdated(() => {",
+            "\t$1",
+            "});"
+        ],
+        "description": "Created onUpdated"
+    },
+    "Created onUnmounted": {
+        "prefix": "vonUnmounted",
+        "body": [
+            "onUnmounted(() => {",
+            "\t$1",
+            "});"
+        ],
+        "description": "Created onUnmounted"
+    },
+    "Created nextTick": {
+        "prefix": "vnextTick",
+        "body": [
+            "nextTick(() => {",
+            "\t$1",
+            "});"
+        ],
+        "description": "Created nextTick"
+    },
+    "v-text": {
+        "prefix": "vText",
+        "body": [
+            "v-text=\"${1:msg}\""
+        ],
+        "description": "Expects: string. Updates the element’s textContent."
+    },
+    "vhtml": {
+        "prefix": "vHtml",
+        "body": [
+            "v-html=\"${1:html}\""
+        ],
+        "description": "Expects: string. Updates the element’s innerHTML."
+    },
+    "v-show": {
+        "prefix": "vShow",
+        "body": [
+            "v-show=\"${1:condition}\""
+        ],
+        "description": "Expects: any"
+    },
+    "v-if": {
+        "prefix": "vIf",
+        "body": [
+            "v-if=\"${1:condition}\""
+        ],
+        "description": "Expects: any"
+    },
+    "v-else": {
+        "prefix": "vElse",
+        "body": [
+            "v-else"
+        ],
+        "description": "Does not expect expression. previous sibling element must have v-if or v-else-if."
+    },
+    "v-else-if": {
+        "prefix": "vElseIf",
+        "body": [
+            "v-else-if=\"${1:condition}\""
+        ],
+        "description": "Expects: any. previous sibling element must have v-if or v-else-if."
+    },
+    "v-for-without-key": {
+        "prefix": "vForWithoutKey",
+        "body": [
+            "v-for=\"${1:item} in ${2:items}\""
+        ],
+        "description": "Expects: Array | Object | number | string"
+    },
+    "v-for": {
+        "prefix": "vFor",
+        "body": [
+            "v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""
+        ],
+        "description": "Expects: Array | Object | number | string"
+    },
+    "v-on": {
+        "prefix": "vOn",
+        "body": [
+            "v-on:${1:event}=\"${2:handle}\""
+        ],
+        "description": "Expects: Function | Inline Statement"
+    },
+    "v-bind": {
+        "prefix": "vBind",
+        "body": [
+            "v-bind$1=\"${2}\""
+        ],
+        "description": "Expects: any (with argument) | Object (without argument)"
+    },
+    "v-model": {
+        "prefix": "vModel",
+        "body": [
+            "v-model=\"${1:something}\""
+        ],
+        "description": "Expects: varies based on value of form inputs element or output of components"
+    },
+    "v-slot": {
+        "prefix": "vSlot",
+        "body": [
+            "v-slot$1=\"${2}\""
+        ],
+        "description": "Expects: JavaScript expression that is valid in a function argument position (supports destructuring in supported environments). Optional - only needed if expecting props to be passed to the slot."
+    },
+    "v-once": {
+        "prefix": "vOnce",
+        "body": [
+            "v-once"
+        ],
+        "description": "Does not expect expression"
+    },
+    "component": {
+        "prefix": "iscomponent",
+        "body": [
+            "<component :is=\"${1:componentId}\"></component>$0"
+        ],
+        "description": "component element"
+    },
+    "Vue Router beforeEach": {
+        "prefix": "beforeeach",
+        "body": [
+            "router.beforeEach((to, from, next) => {",
+            "\t${1:next();}",
+            "});"
+        ],
+        "description": "Vue Router global guards beforeEach"
+    },
+    "Vue Router beforeResolve": {
+        "prefix": "beforeresolve",
+        "body": [
+            "router.beforeResolve((to, from, next) => {",
+            "\t${1:next();}",
+            "});"
+        ],
+        "description": "Vue Router global guards beforeResolve"
+    },
+    "Vue Router afterEach": {
+        "prefix": "aftereach",
+        "body": [
+            "router.afterEach((to, from) => {",
+            "\t",
+            "});"
+        ],
+        "description": "Vue Router global guards afterEach"
+    },
+    "Vue Router beforeEnter": {
+        "prefix": "beforeenter",
+        "body": [
+            "beforeEnter(to, from, next) {",
+            "\t${1:next();}",
+            "},"
+        ],
+        "description": "Vue Router per-route guard beforeEnter"
+    },
+    "Vue Router beforeRouteEnter": {
+        "prefix": "beforeRouteEnter",
+        "body": [
+            "beforeRouteEnter(to, from, next) {",
+            "\tnext(vm => {${1:}});",
+            "},"
+        ],
+        "description": "Vue Router component guards beforeRouteEnter"
+    },
+    "Vue Router beforeRouteUpdate": {
+        "prefix": "beforeRouteUpdate",
+        "body": [
+            "beforeRouteUpdate(to, from, next) {",
+            "\t${1:next();}",
+            "},"
+        ],
+        "description": "Vue Router component guards beforeRouteUpdate"
+    },
+    "Vue Router beforeRouteLeave": {
+        "prefix": "beforeRouteLeave",
+        "body": [
+            "beforeRouteLeave(to, from, next) {",
+            "\t${1:next();}",
+            "},"
+        ],
+        "description": "Vue Router component guards beforeRouteLeave"
+    },
+    "Vue Router Route": {
+        "prefix": "vroute",
+        "body": [
+            "{",
+            "\tpath: '${1:pathName}',",
+            "\tname: '${2:routeName}',",
+            "\tcomponent: () => import('@/views/${3:pathToComponent}'),",
+            "\tmeta: {",
+            "\t${",
+            "\tisHide: false,",
+            "\ttitle: '${4:title}',",
+            "\tkeepAlive: false,",
+            "\ticon: ${5:icon}',",
+            "\tpermissionCode: '',",
+            "\t}",
+            "},"
+        ],
+        "description": "Vue Router route with per route code-splitting"
+    },
+    "vue router hooks": {
+        "prefix": "vrter",
+        "body": "import { useRouter } from 'vue-router'\n\t const router = useRouter()",
+        "description": "Imports router hooks"
+    },
+    "vue route hooks": {
+        "prefix": "vrte",
+        "body": "import { useRoute } from 'vue-router'\n\t const route = useRoute()",
+        "description": "Imports router hooks"
+    },
+    "vue routes hooks": {
+        "prefix": "vrtes",
+        "body": "import { useRouter, useRoute } from 'vue-router'\n\t const router = useRouter()\n\t const route = useRoute()",
+        "description": "Imports router hooks"
+    },
+    "import": {
+        "prefix": "imp",
+        "body": "import ${2:moduleName} from '${1:module}';$0",
+        "description": "Imports entire module statement in ES6 syntax"
+    },
+    "importNoModuleName": {
+        "prefix": "imn",
+        "body": "import '${1:module}';$0",
+        "description": "Imports entire module in ES6 syntax without module name"
+    },
+    "importDestructing": {
+        "prefix": "imd",
+        "body": "import { $2 } from '${1:module}';$0",
+        "description": "Imports only a portion of the module in ES6 syntax"
+    },
+    "importEverything": {
+        "prefix": "ime",
+        "body": "import * as ${2:alias} from '${1:module}';$0",
+        "description": "Imports everything as alias from the module in ES6 syntax"
+    },
+    "importAs": {
+        "prefix": "ima",
+        "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}';$0",
+        "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
+    },
+    "exportNamedVariable": {
+        "prefix": "env",
+        "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
+        "description": "Export named variable in ES6 syntax"
+    },
+    "exportNamedFunction": {
+        "prefix": "enf",
+        "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};\n",
+        "description": "Export named function in ES6 syntax"
+    },
+    "forEach": {
+        "prefix": "fre",
+        "body": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n});",
+        "description": "Creates a forEach statement in ES6 syntax"
+    },
+    "forOf": {
+        "prefix": "fof",
+        "body": "for (const ${1:item} of ${2:object}) {\n\t${0}\n}",
+        "description": "Iterating over property names of iterable objects"
+    },
+    "forIn": {
+        "prefix": "fin",
+        "body": "for (const ${1:item} in ${2:object}) {\n\t${0}\n}",
+        "description": "Iterating over property values of iterable objects"
+    },
+    "anonymousFunction": {
+        "prefix": "anfn",
+        "body": "(${1:params}) => {\n\t${2}\n}",
+        "description": "Creates an anonymous function in ES6 syntax"
+    },
+    "namedFunction": {
+        "prefix": "nfn",
+        "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+        "description": "Creates a named function in ES6 syntax"
+    },
+    "destructingObject": {
+        "prefix": "dob",
+        "body": "const {${2:propertyName}} = ${1:objectToDestruct};",
+        "description": "Creates and assigns a local variable using object destructing"
+    },
+    "destructingArray": {
+        "prefix": "dar",
+        "body": "const [${2:propertyName}] = ${1:arrayToDestruct};",
+        "description": "Creates and assigns a local variable using array destructing"
+    },
+    "setInterval": {
+        "prefix": "sti",
+        "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
+        "description": "Executes the given function at specified intervals in ES6 syntax"
+    },
+    "setTimeOut": {
+        "prefix": "sto",
+        "body": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms});",
+        "description": "Executes the given function after the specified delay in ES6 syntax"
+    },
+    "promise": {
+        "prefix": "prom",
+        "body": "return new Promise((resolve, reject) => {\n\t${1}\n});",
+        "description": "Creates and returns a new Promise in the standard ES6 syntax"
+    },
+    "then": {
+        "prefix": "then",
+        "body": ".then(${1:res} => {\n\t${2}\n})",
+        "description": "Add the .then methods to handle promises"
+    },
+    "thenError": {
+        "prefix": "thene",
+        "body": ".then(${1:res} => {\n\t${2}\n},${3:err} => {\n\t${4}\n})",
+        "description": "Add the .then methods to handle promises"
+    },
+    "thenCatch": {
+        "prefix": "thenc",
+        "body": ".then(${1:res} => {\n\t${2}\n}).catch(${3:err} => {\n\t${4}\n});",
+        "description": "Add the .then and .catch methods to handle promises"
+    },
+}
