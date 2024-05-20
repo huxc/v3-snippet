@@ -13,21 +13,20 @@
     "vscode": "^1.18.0"
   },
   "author": "huxc",
-  
   "categories": [
     "Snippets"
   ],
-  "contributes":{
-  "snippets": [
-    {
-      "language": "vue",
-      "path":"./snippets/vue.json"
-    },
-    {
-      "language": "javascript",
-      "path":"./snippets/vue-typescript.json"
-    }
-  ]
-},
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.code-snippets"
+      }
+    ]
+  },
   "license": "ISC"
 }
