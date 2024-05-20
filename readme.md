@@ -1,36 +1,19 @@
 # v3-snippets
 
-## VS Code vue3、JS(ES6) snippets
+v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 snippets 插件
 
----
+**注意** :本插件不适用于 vue2
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/xabikos.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+## 安装
 
-This extension contains code snippets for JavaScript in ES6 syntax for [Vs Code][code] editor (supports both JavaScript and TypeScript).
+为了安装扩展，需要启动命令(Ctrl + Shift + P 或 Cmd + Shift + P)并键入 Extensions。您可以选择显示已经安装的代码段或安装新的代码段。搜索 *v3-snippets*并安装。
 
-### Note
-
-**All the snippets include the final semicolon `;` There is a fork of those snippets [here](https://marketplace.visualstudio.com/items?itemName=jmsv.JavaScriptSnippetsStandard)
-made by @jmsv where semicolons are not included. So feel free to use them according to your needs.**
-
-## Sponsors
-
-<p><a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=jses6codesnippets&amp;utm_medium=banner"><img src="https://alt-images.codestream.com/codestream_logo_jses6codesnippets.png"></a></br>
-Request and perform code reviews from inside your IDE.  Review any code, even if it's a work-in-progress that hasn't been committed yet, and use jump-to-definition, your favorite keybindings, and other IDE tools.<br> <a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=jses6codesnippets&amp;utm_medium=banner">Try it free</a></p>
-
-## Installation
-
-In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
-There you have either the option to show the already installed snippets or install new ones. Search for _JavaScript (ES6) code snippets_ and install it.
-
-## Supported languages (file extensions)
+## 支持的语言(file extensions)
 
 - JavaScript (.js)
 - Vue (.vue)
 
-## Snippets
+## 代码片段
 
 Below is a list of all available snippets and the 关键词 s of each one. The **⇥** means the `TAB` key.
 
