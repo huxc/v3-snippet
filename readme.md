@@ -15,7 +15,7 @@ v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 s
 
 ## 代码片段
 
-Below is a list of all available snippets and the 关键词 s of each one. The **⇥** means the `TAB` key.
+下面是所有可用代码段的列表以及每个代码段的关键词。 **⇥**表示“TAB”键。
 
 ### vue3
 
