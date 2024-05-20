@@ -24,6 +24,8 @@ Below is a list of all available snippets and the 关键词 s of each one. The *
 |  `v3Setup→`   | `<template><div></div></template><script setup>const props = defineProps({});const emits = defineEmits();</script><style scoped lang="scss"></style>` |
 | `v3Options→`  |                               `<template><div></div></template><script>...</script><style lang="scss" scoped></style>`                                |
 |    `vref→`    |                                                                `const ref = ref(xxx);`                                                                |
+|   `vprops→`   |                                                     `const props = defineProps({ foo: String })`                                                      |
+|   `vemits→`   |                                                      `const emit = defineEmits(['...', '...'])`                                                       |
 |   `vproxy→`   |                                                       `const { proxy } = getCurrentInstance()`                                                        |
 |   `vwatch→`   |                                               `watch(xx, (newValue, oldValue) => {}, { deep: true });`                                                |
 | `vcomputed→`  |                                                            `const $1 = computed(() => {})`                                                            |
@@ -31,8 +33,6 @@ Below is a list of all available snippets and the 关键词 s of each one. The *
 | `vonMounted→` |                                                                 `onMounted(() => {})`                                                                 |
 | `vonUpdated→` |                                                                 `onUpdated(() => {})`                                                                 |
 | `vonUpdated→` |                                                                 `onUpdated(() => {})`                                                                 |
-|   `vprops→`   |                                                     `const props = defineProps({ foo: String })`                                                      |
-|   `vemits→`   |                                                      `const emit = defineEmits(['...', '...'])`                                                       |
 
 ### vue-template
 
