@@ -1,0 +1,33 @@
+{
+  "name": "v3-snippet",
+  "displayName": "v3-admin-el-snippets",
+  "description": "v3-admin-el-snippets",
+  "publisher": "huxc",
+  "icon": "icon/icon.png",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "author": "huxc",
+  
+  "categories": [
+    "Snippets"
+  ],
+  "contributes":{
+  "snippets": [
+    {
+      "language": "vue",
+      "path":"./snippets/vue.json"
+    },
+    {
+      "language": "javascript",
+      "path":"./snippets/vue-typescript.json"
+    }
+  ]
+},
+  "license": "ISC"
+}
