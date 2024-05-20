@@ -1,6 +1,6 @@
 # v3-snippets
 
-v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 snippets 插件
+v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 vscode 插件
 
 **注意** :本插件不适用于 vue2
 

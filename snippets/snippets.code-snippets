@@ -246,7 +246,6 @@
             "\tname: '${2:routeName}',",
             "\tcomponent: () => import('@/views/${3:pathToComponent}'),",
             "\tmeta: {",
-            "\t${",
             "\tisHide: false,",
             "\ttitle: '${4:title}',",
             "\tkeepAlive: false,",
