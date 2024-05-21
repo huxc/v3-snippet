@@ -1,0 +1,45 @@
+{
+  "Element-plus el-button": {
+    "prefix": "v3el-btn",
+    "body": [
+      "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" @click=\"handle${2:Action}\">${3:Primary}</el-button>"
+    ],
+    "description": "Element-plus el-button"
+  },
+  "Element-plus el-button link": {
+    "prefix": "v3el-btntext",
+    "body": [
+      "<el-button type=\"${1|primary,success,info,warning,danger,default|}\" link @click=\"handle${2:Action}\">${3:Primary}</el-button>"
+    ],
+    "description": "Element-plus el-button link"
+  },
+  "Form 表单组件 Radio": {
+    "prefix": "v3el-radio",
+    "body": [
+      "<el-radio v-model=\"${1}\" label=\"${2}\" @change=\"${3}\">${4}</el-radio>",
+      "${5}"
+    ],
+    "description": "element-plus <el-radio>"
+  },
+
+  "Form 表单组件 Radio Group": {
+    "prefix": "v3el-radiog-roup",
+    "body": [
+      "<el-radio-group v-model=\"$1\" @change=\"$2\">",
+      "\t<el-radio v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :label=\"${3:item}.${6:label}\">",
+      "\t\t{{${3:item}.${7:title}}}",
+      "\t</el-radio>",
+      "</el-radio-group>",
+      "${8}"
+    ],
+    "description": "element-plus <el-radio-group> with <el-radio>"
+  },
+  "Form 表单组件 Checkbox": {
+    "prefix": "v3el-checkbox",
+    "body": [
+      "<el-checkbox v-model=\"${1}\" label=\"${2}\" :indeterminate=\"${3:false}\" @change=\"${4}\">{{$5}}</el-checkbox>",
+      "${6}"
+    ],
+    "description": "element-plus <el-checkbox>"
+  }
+}

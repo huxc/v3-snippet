@@ -16,23 +16,72 @@
   ],
   "keywords": [
     "v3",
+    "vue",
     "vue3",
-    "Snippets",
+    "snippets",
     "v3snippets"
   ],
   "contributes": {
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue-router.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue-template.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/import-script.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/v3-script.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/v3-element.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/v3-admin-el.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/vue-router.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/import-script.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/v3-script.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/v3-admin-el.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/vue-router.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/import-script.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/v3-script.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/v3-admin-el.json"
       }
     ]
   },

@@ -1,0 +1,167 @@
+{
+  "use page": {
+    "prefix": "v3page-hooks",
+    "body": [
+      "export function usePage() {",
+      "  // 请求接口",
+      "  const requestApi = ref(${1:api_xx_xx})\n",
+      "  // 表单列名",
+      "  const columns = [",
+      "    { type: 'selection', label: '多选' },",
+      "    { type: 'index', label: '序号', width: '60px' },",
+      "    { type: '', label: '' },",
+      "    { slot: 'operation', label: '操作' },",
+      "  ]\n",
+      "  return {",
+      "     columns, requestApi",
+      "  }"
+    ]
+  },
+  "use search": {
+    "prefix": "v3search-hooks",
+    "body": [
+      "import ${1:module} from '@/hooks/useOptions'",
+      "import ${2:module} from '@/enums'\n",
+      "export function useSearch() {",
+      "  // 搜索框可折叠",
+      "  const collapse = true",
+      "  // 可折叠搜索框默认不展开",
+      "  const defaultOver = false",
+      "  const searchItems = []\n",
+      "  return {",
+      "     collapse, defaultOver, searchItems",
+      "  }"
+    ]
+  },
+  "use el-dialog": {
+    "prefix": "v3Dialog",
+    "body": [
+      "useDialog({",
+      "  attrs: { title: '${1:title}' },",
+      "  props: {  },",
+      "  footer: { okText: '提交' },// 如果不需要底部按钮可删除",
+      "  componentEl: '${2:componentName}',",
+      "  afterClose: (${3:params}) => {",
+      "  },",
+      "  beforeClose: (done,${4:params}) => {",
+      "    tableRef.value.refresh() //刷新列表",
+      "    done() // beforeClose需要手动关闭弹窗",
+      "  },"
+    ]
+  },
+  "use el-drawer": {
+    "prefix": "v3Drawer",
+    "body": [
+      "useDrawer({",
+      "  attrs: { title: '${1:title}' },",
+      "  props: {  },",
+      "  footer: { okText: '提交' },// 如果不需要底部按钮可删除",
+      "  componentEl: '${2:componentName}',",
+      "  afterClose: (${3:params}) => {",
+      "  },",
+      "  beforeClose: (done, ${4:params}) => {",
+      "    tableRef.value.refresh() //刷新列表",
+      "    done() //关闭弹窗",
+      "  },"
+    ]
+  },
+  "use v3form-input": {
+    "prefix": "v3input-json",
+    "body": [
+      "{",
+      "  tag: 'input',",
+      "  itemAttrs: {",
+      "    label: '${1:label}',",
+      "    col: ${2:24}",
+      "    rules: [",
+      "      { required: true, message: '不能为空', trigger: 'click' },",
+      "    ],",
+      "  },",
+      "  attrs: {",
+      "    key: '${3:key}',",
+      "    maxlength: ${4:10},",
+      "    placeholder: '请输入',",
+      "  },",
+      "},"
+    ]
+  },
+  "use v3form-select": {
+    "prefix": "v3select-json",
+    "body": [
+      "{",
+      "  tag: 'select',",
+      "  itemAttrs: {",
+      "    label: '${1:label}',",
+      "    col: ${2:24}",
+      "    rules: [",
+      "      { required: true, message: '不能为空', trigger: 'click' },",
+      "    ],",
+      "  },",
+      "  attrs: {",
+      "    key: '${3:key}',",
+      "    placeholder: '请选择',",
+      "    options: []",
+      "  },",
+      "},"
+    ]
+  },
+  "use v3form-date": {
+    "prefix": "v3date-json",
+    "body": [
+      "{",
+      "  tag: 'date',",
+      "  itemAttrs: {",
+      "    label: '${1:label}',",
+      "    col: ${2:24}",
+      "    rules: [",
+      "      { required: true, message: '不能为空', trigger: 'click' },",
+      "    ],",
+      "  },",
+      "  attrs: {",
+      "    key: '${3:key}',",
+      "    placeholder: '请选择',",
+      "    'format': '${4:YYYY-MM-DD}',",
+      "    'value-format': '${5:yyyy-MM-dd}'",
+      "  },",
+      "},"
+    ]
+  },
+  "use v3form-radio": {
+    "prefix": "v3radio-json",
+    "body": [
+      "{",
+      "  tag: 'radio',",
+      "  itemAttrs: {",
+      "    label: '${1:label}',",
+      "    col: ${2:24}",
+      "    rules: [",
+      "      { required: true, message: '不能为空', trigger: 'click' },",
+      "    ],",
+      "  },",
+      "  attrs: {",
+      "    key: '${3:key}',",
+      "    placeholder: '请选择',",
+      "    options: []",
+      "  },",
+      "},"
+    ]
+  },
+  "use v3form-daterange": {
+    "prefix": "v3daterange-json",
+    "body": [
+      "{",
+      "  tag: 'daterange',",
+      "  itemAttrs: {",
+      "    label: '${1:label}',",
+      "    col: ${2:24}",
+      "    rules: [",
+      "      { required: true, message: '不能为空', trigger: 'click' },",
+      "    ],",
+      "  },",
+      "  attrs: {",
+      "    key: '${3:key}',",
+      "  },",
+      "},"
+    ]
+  }
+}

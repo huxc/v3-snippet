@@ -1,0 +1,56 @@
+{
+  "v3-vsetup": {
+    "prefix": "v3setup",
+    "body": "<template>\r\n    <div></div>\r\n</template>\r\n\r\n<script setup>\r\n\r\nconst props = defineProps({});\r\n\r\nconst emits = defineEmits();\r\n</script>\r\n\r\n<style scoped lang=\"scss\"></style>\r\n",
+    "description": ""
+  },
+  "v3-options": {
+    "prefix": "v3options",
+    "body": "<template>\r\n    <div>$1</div>\r\n</template>\r\n\r\n<script>\r\nimport { defineComponent } from 'vue';\r\n\r\nexport default defineComponent({\r\n    name: '$1',\r\n    data() {\r\n        return {};\r\n    },\r\n\r\n    props: {},\r\n\r\n    emits: {},\r\n\r\n    components: {},\r\n\r\n    created() {},\r\n\r\n    mounted() {},\r\n\r\n    methods: {},\r\n\r\n    computed: {},\r\n\r\n    watch: {},\r\n\r\n    filters: {},\r\n\r\n    directives: {}\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
+    "description": ""
+  },
+  "Created refObject": {
+    "prefix": "v3ref",
+    "body": ["const $1 = ref($2);"],
+    "description": "Created refObject"
+  },
+  "Get Current Proxy": {
+    "prefix": "v3proxy",
+    "body": ["const { proxy } = getCurrentInstance();"],
+    "description": "Get Current Vue Proxy"
+  },
+  "Created Watch In Setup": {
+    "prefix": "v3watch",
+    "body": [
+      "watch($1, (newValue, oldValue) => {",
+      "\t$2",
+      "}, { deep: true });"
+    ],
+    "description": "Created Watch In Setup"
+  },
+  "Created Computed": {
+    "prefix": "v3computed",
+    "body": ["const $1 = computed(() => {", "\t$2", "});"],
+    "description": "Created Computed"
+  },
+  "Created onMounted": {
+    "prefix": "v3Mounted",
+    "body": ["onMounted(() => {", "\t$1", "});"],
+    "description": "Created onMounted"
+  },
+  "Created onUpdated": {
+    "prefix": "v3Updated",
+    "body": ["onUpdated(() => {", "\t$1", "});"],
+    "description": "Created onUpdated"
+  },
+  "Created onUnmounted": {
+    "prefix": "v3Unmounted",
+    "body": ["onUnmounted(() => {", "\t$1", "});"],
+    "description": "Created onUnmounted"
+  },
+  "Created nextTick": {
+    "prefix": "v3nextTick",
+    "body": ["nextTick(() => {", "\t$1", "});"],
+    "description": "Created nextTick"
+  }
+}

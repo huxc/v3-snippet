@@ -1,0 +1,82 @@
+{
+  "Vue Router beforeEach": {
+    "prefix": "beforeeach",
+    "body": [
+      "router.beforeEach((to, from, next) => {",
+      "\t${1:next();}",
+      "});"
+    ],
+    "description": "Vue Router global guards beforeEach"
+  },
+  "Vue Router beforeResolve": {
+    "prefix": "beforeresolve",
+    "body": [
+      "router.beforeResolve((to, from, next) => {",
+      "\t${1:next();}",
+      "});"
+    ],
+    "description": "Vue Router global guards beforeResolve"
+  },
+  "Vue Router afterEach": {
+    "prefix": "aftereach",
+    "body": ["router.afterEach((to, from) => {", "\t", "});"],
+    "description": "Vue Router global guards afterEach"
+  },
+  "Vue Router beforeEnter": {
+    "prefix": "beforeenter",
+    "body": ["beforeEnter(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router per-route guard beforeEnter"
+  },
+  "Vue Router beforeRouteEnter": {
+    "prefix": "beforeRouteEnter",
+    "body": [
+      "beforeRouteEnter(to, from, next) {",
+      "\tnext(vm => {${1:}});",
+      "},"
+    ],
+    "description": "Vue Router component guards beforeRouteEnter"
+  },
+  "Vue Router beforeRouteUpdate": {
+    "prefix": "beforeRouteUpdate",
+    "body": ["beforeRouteUpdate(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteUpdate"
+  },
+  "Vue Router beforeRouteLeave": {
+    "prefix": "beforeRouteLeave",
+    "body": ["beforeRouteLeave(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteLeave"
+  },
+  "Vue Router Route": {
+    "prefix": "vroute",
+    "body": [
+      "{",
+      "\tpath: '${1:pathName}',",
+      "\tname: '${2:routeName}',",
+      "\tcomponent: () => import('@/views/${3:pathToComponent}'),",
+      "\tmeta: {",
+      "  \tisHide: false,",
+      "  \ttitle: '${4:title}',",
+      "  \tkeepAlive: false,",
+      "  \ticon: ${5:icon}',",
+      "  \tpermissionCode: '',",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Router route with per route code-splitting"
+  },
+  "vue router hooks": {
+    "prefix": "vrter",
+    "body": "import { useRouter } from 'vue-router'\n\t const router = useRouter()",
+    "description": "Imports router hooks"
+  },
+  "vue route hooks": {
+    "prefix": "vrte",
+    "body": "import { useRoute } from 'vue-router'\n\t const route = useRoute()",
+    "description": "Imports router hooks"
+  },
+  "vue routes hooks": {
+    "prefix": "vrtes",
+    "body": "import { useRouter, useRoute } from 'vue-router'\n\t const router = useRouter()\n\t const route = useRoute()",
+    "description": "Imports router hooks"
+  }
+}
