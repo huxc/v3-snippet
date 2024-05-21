@@ -14,7 +14,8 @@
       "  ]\n",
       "  return {",
       "     columns, requestApi",
-      "  }"
+      "  }",
+      "}"
     ]
   },
   "use search": {
@@ -30,7 +31,8 @@
       "  const searchItems = []\n",
       "  return {",
       "     collapse, defaultOver, searchItems",
-      "  }"
+      "  }",
+      "}"
     ]
   },
   "use el-dialog": {
@@ -40,13 +42,14 @@
       "  attrs: { title: '${1:title}' },",
       "  props: {  },",
       "  footer: { okText: '提交' },// 如果不需要底部按钮可删除",
-      "  componentEl: '${2:componentName}',",
+      "  componentEl: ${2:componentName},",
       "  afterClose: (${3:params}) => {",
       "  },",
       "  beforeClose: (done,${4:params}) => {",
       "    tableRef.value.refresh() //刷新列表",
       "    done() // beforeClose需要手动关闭弹窗",
-      "  },"
+      "  },",
+      "})"
     ]
   },
   "use el-drawer": {
@@ -56,13 +59,14 @@
       "  attrs: { title: '${1:title}' },",
       "  props: {  },",
       "  footer: { okText: '提交' },// 如果不需要底部按钮可删除",
-      "  componentEl: '${2:componentName}',",
+      "  componentEl: ${2:componentName},",
       "  afterClose: (${3:params}) => {",
       "  },",
       "  beforeClose: (done, ${4:params}) => {",
       "    tableRef.value.refresh() //刷新列表",
       "    done() //关闭弹窗",
-      "  },"
+      "  },",
+      "})"
     ]
   },
   "use v3form-input": {
