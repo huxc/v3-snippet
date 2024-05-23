@@ -1,20 +1,20 @@
 {
-  "v3-vsetup": {
+  "vue3 setup": {
     "prefix": "v3setup",
     "body": "<template>\r\n    <div></div>\r\n</template>\r\n\r\n<script setup>\r\n\r\nconst props = defineProps({});\r\n\r\nconst emits = defineEmits();\r\n</script>\r\n\r\n<style scoped lang=\"scss\"></style>\r\n",
     "description": ""
   },
-  "v3-options": {
+  "vue3 options": {
     "prefix": "v3options",
     "body": "<template>\r\n    <div>$1</div>\r\n</template>\r\n\r\n<script>\r\nimport { defineComponent } from 'vue';\r\n\r\nexport default defineComponent({\r\n    name: '$1',\r\n    data() {\r\n        return {};\r\n    },\r\n\r\n    props: {},\r\n\r\n    emits: {},\r\n\r\n    components: {},\r\n\r\n    created() {},\r\n\r\n    mounted() {},\r\n\r\n    methods: {},\r\n\r\n    computed: {},\r\n\r\n    watch: {},\r\n\r\n    filters: {},\r\n\r\n    directives: {}\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
     "description": ""
   },
-  "Created ref": {
+  "vue3 Ref": {
     "prefix": "v3ref",
     "body": ["const $1 = ref($2);"],
     "description": "Created ref"
   },
-  "Vue Composition API - Reactive": {
+  "Vue3 Reactive": {
     "prefix": "v3reactive",
     "body": ["const ${1:name} = reactive({", "\t${2}", "});"],
     "description": "Vue Composition api - reactive"
@@ -34,7 +34,7 @@
     "body": ["const { proxy } = getCurrentInstance();"],
     "description": "Get Current Vue Proxy"
   },
-  "Created Watch In Setup": {
+  "Created Watch": {
     "prefix": "v3watch",
     "body": [
       "watch($1, (newValue, oldValue) => {",
