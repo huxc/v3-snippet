@@ -19,20 +19,21 @@ v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 v
 
 ### vue3
 
-|    关键词     |                                                                       代码片段                                                                        |
-| :-----------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  `v3setup→`   | `<template><div></div></template><script setup>const props = defineProps({});const emits = defineEmits();</script><style scoped lang="scss"></style>` |
-| `v3options→`  |                               `<template><div></div></template><script>...</script><style lang="scss" scoped></style>`                                |
-|   `v3ref→`    |                                                                `const ref = ref(xxx);`                                                                |
-|  `v3props→`   |                                                     `const props = defineProps({ foo: String })`                                                      |
-|  `v3emits→`   |                                                      `const emit = defineEmits(['...', '...'])`                                                       |
-|  `v3proxy→`   |                                                       `const { proxy } = getCurrentInstance()`                                                        |
-|  `v3watch→`   |                                               `watch(xx, (newValue, oldValue) => {}, { deep: true });`                                                |
-| `v3computed→` |                                                            `const $1 = computed(() => {})`                                                            |
-| `v3nextTick→` |                                                                 `nextTick(() => {})`                                                                  |
-| `v3Mounted→`  |                                                                 `onMounted(() => {})`                                                                 |
-| `v3Updated→`  |                                                                 `onUpdated(() => {})`                                                                 |
-| `v3Updated→`  |                                                                 `onUpdated(() => {})`                                                                 |
+|     关键词     |                                                                       代码片段                                                                        |
+| :------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   `v3setup→`   | `<template><div></div></template><script setup>const props = defineProps({});const emits = defineEmits();</script><style scoped lang="scss"></style>` |
+|  `v3options→`  |                               `<template><div></div></template><script>...</script><style lang="scss" scoped></style>`                                |
+|    `v3ref→`    |                                                                `const ref = ref(xxx);`                                                                |
+| `v3reactive→`  |                                                             `const name = reactive({});`                                                              |
+|   `v3props→`   |                                                           `const props = defineProps({  })`                                                           |
+|   `v3emits→`   |                                                      `const emit = defineEmits(['...', '...'])`                                                       |
+|   `v3proxy→`   |                                                       `const { proxy } = getCurrentInstance()`                                                        |
+|   `v3watch→`   |                                               `watch(xx, (newValue, oldValue) => {}, { deep: true });`                                                |
+| `v3computed→`  |                                                            `const $1 = computed(() => {})`                                                            |
+| `v3nextTick→`  |                                                                 `nextTick(() => {})`                                                                  |
+|  `v3Mounted→`  |                                                                 `onMounted(() => {})`                                                                 |
+|  `v3Updated→`  |                                                                 `onUpdated(() => {})`                                                                 |
+| `v3unmounted→` |                                                                `onUnmounted(() => {})`                                                                |
 
 ### vue-template
 

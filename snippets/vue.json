@@ -9,10 +9,25 @@
     "body": "<template>\r\n    <div>$1</div>\r\n</template>\r\n\r\n<script>\r\nimport { defineComponent } from 'vue';\r\n\r\nexport default defineComponent({\r\n    name: '$1',\r\n    data() {\r\n        return {};\r\n    },\r\n\r\n    props: {},\r\n\r\n    emits: {},\r\n\r\n    components: {},\r\n\r\n    created() {},\r\n\r\n    mounted() {},\r\n\r\n    methods: {},\r\n\r\n    computed: {},\r\n\r\n    watch: {},\r\n\r\n    filters: {},\r\n\r\n    directives: {}\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
     "description": ""
   },
-  "Created refObject": {
+  "Created ref": {
     "prefix": "v3ref",
     "body": ["const $1 = ref($2);"],
-    "description": "Created refObject"
+    "description": "Created ref"
+  },
+  "Vue Composition API - Reactive": {
+    "prefix": "v3reactive",
+    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "});"],
+    "description": "Vue Composition api - reactive"
+  },
+  "defineProps": {
+    "prefix": "v3props",
+    "body": ["const props = defineProps({\t", "${0:name} : ${1:value}\t", "})"],
+    "description": "defineProps element"
+  },
+  "defineEmits": {
+    "prefix": "v3emits",
+    "body": ["const emit = defineEmits([\t", "\"$0\"\t", "])"],
+    "description": "defineEmits element"
   },
   "Get Current Proxy": {
     "prefix": "v3proxy",
@@ -39,14 +54,19 @@
     "description": "Created onMounted"
   },
   "Created onUpdated": {
-    "prefix": "v3Updated",
+    "prefix": "v3updated",
     "body": ["onUpdated(() => {", "\t$1", "});"],
     "description": "Created onUpdated"
   },
   "Created onUnmounted": {
-    "prefix": "v3Unmounted",
+    "prefix": "v3unmounted",
     "body": ["onUnmounted(() => {", "\t$1", "});"],
     "description": "Created onUnmounted"
+  },
+  "Vue3 defineExpose": {
+    "prefix": "v3expose",
+    "body": ["defineExpose({", "\t${1}", "});"],
+    "description": "Vue3 defineExpose"
   },
   "Created nextTick": {
     "prefix": "v3nextTick",
