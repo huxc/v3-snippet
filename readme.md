@@ -34,6 +34,7 @@ v3-snippets 是一个适配 Vue3 模版、路由、Api 和 ES6 常用函数的 v
 |  `v3Mounted→`  |                                                                 `onMounted(() => {})`                                                                 |
 |  `v3Updated→`  |                                                                 `onUpdated(() => {})`                                                                 |
 | `v3unmounted→` |                                                                `onUnmounted(() => {})`                                                                |
+|  `v3expose→`   |                                                                  `defineExpose({});`                                                                  |
 
 ### vue-template
 

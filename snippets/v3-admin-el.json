@@ -1,5 +1,5 @@
 {
-  "use page": {
+  "usepage": {
     "prefix": "v3page-hooks",
     "body": [
       "export function usePage() {",
@@ -18,7 +18,7 @@
       "}"
     ]
   },
-  "use search": {
+  "usesearch": {
     "prefix": "v3search-hooks",
     "body": [
       "import ${1:module} from '@/hooks/useOptions'",
@@ -35,7 +35,7 @@
       "}"
     ]
   },
-  "use el-dialog": {
+  "usedialog": {
     "prefix": "v3Dialog",
     "body": [
       "useDialog({",
@@ -52,7 +52,7 @@
       "})"
     ]
   },
-  "use el-drawer": {
+  "usedrawer": {
     "prefix": "v3Drawer",
     "body": [
       "useDrawer({",

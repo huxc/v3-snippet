@@ -16,7 +16,7 @@
   },
   "Vue Composition API - Reactive": {
     "prefix": "v3reactive",
-    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "});"],
+    "body": ["const ${1:name} = reactive({", "\t${2}", "});"],
     "description": "Vue Composition api - reactive"
   },
   "defineProps": {

@@ -3,7 +3,7 @@
   "description": "frequently used snippet",
   "publisher": "huxc",
   "icon": "icon/icon.png",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,7 +25,7 @@
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/vue.json"
+        "path": "./snippets/vue-script.json"
       },
       {
         "language": "vue",
@@ -50,6 +50,14 @@
       {
         "language": "vue",
         "path": "./snippets/v3-admin-el.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/v3-element.json"
       },
       {
         "language": "javascript",
